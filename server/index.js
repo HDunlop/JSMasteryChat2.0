@@ -4,9 +4,13 @@ const http = require('http');
 
 const PORT = process.env.PORT || 5000
 
+const router = require('./router');
+
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 //basic rundown to make socket.io server work
+
+app.use(router);
 
 server.listen(PORT, () => console.log(`server has started on port ${PORT}`));
