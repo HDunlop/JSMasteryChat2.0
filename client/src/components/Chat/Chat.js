@@ -4,6 +4,7 @@ import io from 'socket.io-client';
 
 let socket;
 
+
 const Chat = ({ location }) => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
