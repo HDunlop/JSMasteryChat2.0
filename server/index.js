@@ -16,8 +16,6 @@ io.on('connection', (socket) => {
 
     socket.on('join', ({ name, room }, callback) => {
         console.log(name, room);
-
-        callback();
     });
 
     socket.on('disconnect', () => {
