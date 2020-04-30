@@ -1,7 +1,7 @@
 const users = [];
 
 const addUser = ({ id, name, room }) => {
-    //JavaScript Mastery -> javascriptmastery
+    // JavaScript Mastery -> javascriptmastery
     name = name.trim().toLowerCase();
     room = room.trim().toLowerCase();
 
